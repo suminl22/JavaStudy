@@ -1,0 +1,9 @@
+
+public class Exam_02 {
+public static void main(String[] args) {
+	// 변수와 자료형
+	byte a = 1;	// 컴퓨터야! a라는 공간을 만들고 거기에 1을 저장해줘
+	System.out.println(a);  // a에 있는 것을 출력해줘!
+	
+	}
+}

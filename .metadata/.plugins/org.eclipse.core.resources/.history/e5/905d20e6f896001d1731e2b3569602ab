@@ -1,0 +1,14 @@
+
+public class Exam_06 {
+	public static void main(String[] args) {
+		int x = 10;
+		boolean result;
+		result = x>10 && x<20;
+		
+		char ch = 'a';
+		result = ch=='y' || ch =='Y';
+		
+		result = ((x>=100)&&(x<=200))||x==300;
+		
+	}
+}

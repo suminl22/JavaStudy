@@ -1,0 +1,25 @@
+
+public class Exam_02 {
+public static void main(String[] args) {
+	// 변수와 자료형
+	byte a = 1;	// 컴퓨터야! a라는 공간을 만들고 거기에 1을 저장해줘
+	System.out.println(a);  // a에 있는 것을 출력해줘!
+	
+	// 가장 작은 메모리 단위 : bit
+	// byte(1) short(2) char(2) int(4) double(4)
+	
+	// a = 128; // Error! - 오버플로우
+	a = 127;	// OK
+	
+	// short = 2 byte = 16 bit <= 32767
+	short b = 32767;	// OK
+	
+	char c = 65000;
+	
+	// int = 4 byte = 32 bit
+	int d = 1000000000;		// 대충 십억 까지 가능
+	
+	// 이것만 외워라!
+	// 65 = 'A'     97 = 'a' 
+	}
+}

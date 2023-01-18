@@ -1,0 +1,27 @@
+//import java.io.*;
+//
+//public class Exam_06 {
+//	public static void main(String[] args) throws Exception{
+//		// 입력받기 : System.in.read()
+//		// 예외전가 : throws Exception
+//		
+//		System.out.print("한 글자를 입력해주세요 >> ");
+//		int input = System.in.read();		
+//		// char ch = (char)input;
+//		System.out.println("입력하신 문자 "+ char(input) + "의 아스키코드는 " +input+ " 입니다.");
+//		
+//	}
+//}
+
+//6.
+import java.io.*;
+
+public class Exam_06{
+   public static void main(String[] args) throws Exception {
+      
+      System.out.print("한 글자를 입력해 주세요: ");
+      int input = System.in.read();
+      
+      System.out.println("입력하신문자는 "+(char)input + " 이고 아스키코드 십진수는 " + (int)input + " 입니다.");
+   }
+}

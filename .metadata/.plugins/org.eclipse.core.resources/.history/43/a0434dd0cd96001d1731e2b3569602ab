@@ -1,0 +1,10 @@
+
+public class Exam_02 {
+public static void main(String[] args) {
+	// Data Casting : ³ÐÀº ¹üÀ§ -> Á¼Àº ¹üÀ§
+	short b = 100;
+	byte a = (short)b;
+	System.out.println(b);
+	
+	}
+}
