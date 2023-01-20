@@ -4,63 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Website</title>
+    <title>HTML Website by Minsoo</title>
+    <style>
+        body {background-color: antiquewhite;}
+        h1 {background-color: rgb(255,128,0);}
+        p{background-color: #FFFFCC;}
+        img{width:40%; border: 1px solid black;}
+        table, th, td {border: 1px solid black; border-collapse: collapse; text-align: center;}
+        .time_table {width: 125px}
+        table{width:1000px; margin-left:auto; margin-right:auto}
+    </style>
 </head>
-<body>
+
+<body background="/examples/images/img_background_good.png">
     <h1 style = "background-color: white; color: blueviolet; font-size:250%">
         Instagram</h1>
 
     <p>
-        <h3 style = "text-align: center">여기서부터 <b><mark>단락</mark></b>입니다.</h3></p>
-    
+        <h2 style = "text-align: center">여기서부터 <b><mark>단락</mark></b>입니다.</h2></p>
     <hr>
 
-    <p>줄을 나누고 싶다면<br>
-        &lt;br&gt;를 사용하세요</p>
+    <ol>
+        <li><h4>단락연습</h4></li>
+        <p>줄을 나누고 싶다면<br>
+            &lt;br&gt;를 사용하세요</p>
 
-    <pre>혹은
-        &lt;pre&gt;태그를 사용하세요</pre>
-   
-
-    <p>민수는 지금
-        <q>html 기본 언어를 배우고 있다</q>
-    </p>
-
-    <blockquote>
-        여름이었다...
-    </blockquote>
-
-    <p>
-        <strong><abbr title = "이름">민수</abbr></strong>
-        민수는 24살이다. 코딩을 정말 잘하고 싶은데 새로운 것을 배우는 것이 여간 쉽지 않다.
-    </p>
-
-    <address>
-        서울특별시<br>
-        강남구 테헤란로
-        이건왜있냐근데?
-    </address>
-
-    <hr>
-
-
-
-
+        <pre>혹은
+            &lt;pre&gt;태그를 사용하세요</pre>
     
 
+        <li><h4>북마크&인용&주소</h4></li>
+        <p><a name="bookmark"></a>민수는 지금
+            <q>html 기본 언어를 배우고 있다</q></p>
 
+        <blockquote>
+            여름이었다...
+        </blockquote>
+
+        <p>
+            <strong><abbr title = "이름"><a href="#bookmark">민수</a></abbr></strong>
+            민수는 24살이다. 코딩을 정말 잘하고 싶은데 새로운 것을 배우는 것이 여간 쉽지 않다.
+        </p>
+
+        <address>
+            서울특별시<br>
+            강남구 테헤란로
+            이건왜있냐근데?
+        </address><hr>
+
+        <li><h4>이미지</h4></li>
+        <div>
+            <div style="float: left">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpZWfQ%2FbtqVdMAYoxs%2Fq048JOwyv78V1wcm3texQK%2Fimg.jpg" alt="앗.. 이미지가 없어요ㅠㅠ"><br>
+
+                <a href="https://dailydoggie.tistory.com/11">사진출처(현재창에서)</a><br>
+                <a href="https://dailydoggie.tistory.com/11" target="_blank">사진출처(새 창에서)</a><br>
+            </div>
+                
+            <div>
+                <img src="data:image/png;base64,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" alt="진실혹은거짓" usemap="#vending" style="width:320px; height:240px" />
+                <map name="vending">
+                    <area shape="rect" coords="90,60,180,130" alt="거짓"
+                        href="https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93%EB%A7%90">
+                    <area shape="rect" coords="210,200,70,130" alt="진실"
+                        href="https://ko.wikipedia.org/wiki/%EC%A7%84%EC%8B%A4">
+                </map><hr>
+            </div>
+        </div>
+
+
+        <li><h4>리스트&정의</h4></li>
+        <ul style="list-style-type: square">
+            <li>뭐를</li>
+            <li>리스트로</li>
+            <li>만들까?</li>
+        </ul>
+
+        <ol style="list-style-type: upper-roman">
+            <li>사건의</li>
+            <li>발단은</li>
+            <li>중요해</li>
+        </ol><hr>
+
+        <dl>
+            <dt>수민</dt>
+            <dd>- 2000년생으로 24살임</dd>
+            <dt>민수</dt>
+            <dd>- 2022년에 새로 태어난 수민의 new 자아</dd>
+        </dl><hr>
+
+        <li><h4>테이블</h4></li>
+        <table style = "width:700px">
+            <caption>식사표</caption>
+            <tr style = "background-color: lightgrey">
+                <th></th>
+                <th>아침</th>
+                <th>점심</th>
+                <th>저녁</th>
+            </tr>
+            <tr>
+                <td>1/18</td>
+                <td></td>
+                <td>우육면</td>
+                <td>샤브샤브</td>
+            </tr>
+            <tr>
+                <td>1/19</td>
+                <td>두유 한 팩</td>
+                <td>참치 김밥</td>
+                <td>김치 찌개</td>
+            </tr>
+            <tr>
+                <td>1/20</td>
+                <td>밤만쥬 2개</td>
+                <td>돌솥비빔밥</td>
+                <td></td>
+            </tr>
+        </table><br><br>
+
+        <table style = "width:1000px; margin-left:auto; margin-right:auto" >
+            <caption>셀 합치기</caption>
+            <tr>
+                <th class="time_table"></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+                <th>일</th>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td>
+                <td rowspan="4" colspan="5">공부1</td>
+                <td>늦잠</td>
+                <td rowspan="10">교회</td>
+            </tr>
+            <tr>
+                <td>10:00-11:00</td>
+                <td rowspan="4">청소년부<br>찬양팀<br>연습</td>
+            </tr>
+            <tr>
+                <td>11:00-12:00</td>
+            </tr>
+            <tr>
+                <td>12:00-13:00</td>
+            </tr>
+            <tr>
+                <td>13:00-14:00</td>
+                <td colspan="5">점심시간</td>
+            </tr>
+            <tr>
+                <td>14:00-15:00</td>
+                <td rowspan="4" colspan="5">공부2</td>
+            </tr>
+            <tr>
+                <td>15:00-16:00</td>
+            </tr>
+            <tr>
+                <td>16:00-17:00</td>
+            </tr>
+            <tr>
+                <td>17:00-18:00</td>
+            </tr>
+            <tr>
+                <td>18:00-19:00</td>
+                <td colspan="5">이동</td>
+            </tr>
+            <tr>
+                <td>19:00-20:00</td>
+                <td colspan="7">저녁시간</td>
+            </tr>
+            <tr>
+                <td>20:00-21:00</td>
+                <td rowspan="3">자유시간</td>
+                <td>자유시간</td>
+                <td rowspan="3">자유시간</td>
+                <td>자유시간</td>
+                <td rowspan="3">자유시간</td>
+                <td>자유시간</td>
+            </tr>
+            <tr>
+                <td>21:00-22:00</td>
+                <td rowspan="2">헬스<br>(하체)</td>
+                <td rowspan="2">헬스<br>(상체)</td>
+                <td rowspan="2">헬스<br>(전신)</td>
+            </tr>
+            <tr>
+                <td>22:00-23:00</td>
+            </tr>
+            <tr>
+                <td>23:00-24:00</td>
+                <td colspan="7">하루를 마무리 합시다!</td>
+            </tr>
+        </table><br>   
+        
+        <li>
+            <h4>블록(block) 타입의 요소</h4>해당 라인의 모든 너비를 차지하자
+                <p style="border: 3px solid mediumslateblue">
+                    p요소
+                </p>
+                <div style="background-color: lightblue; color: green; text-align: center;">
+                    <h3>div요소를 이용한 스타일 적용</h1>
+                    <p>이렇게 div요소들을 묶은 다음에 style속성과 클래스 등을 이용하여 한 번에 스타일 적용 가능</p>
+                </div>
+        </li>
+    </ol>
     
-
-
-<!--     
-    <div id="login-form">
-        <input
-            required maxlength="15"
-            type="text"
-            placeholder="What is your name" />
-        <button>Log In</button>
-        <script src="app.js"></script>
-    </div> -->
     
 </body>
 </html>
